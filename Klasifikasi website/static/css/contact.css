@@ -1,0 +1,97 @@
+/* Styles for header */
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Styles for contact section */
+#kontak {
+  background-image: url('/static/Gambar/HEADER\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+  color: #333;
+}
+
+#kontak h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#kontak p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #555;
+  border: none;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  padding: 12px 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #337ab7;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+/* Styles for footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}

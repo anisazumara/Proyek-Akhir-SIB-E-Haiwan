@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-HAIWAN</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>WELCOME TO</h1>
+            <h1 class="highlight">E-HAIWAN</h1>
+            <p>E-Learning About Animal for Kid's</p>
+            <a href="#section-features" class="btn">Lihat Deskripsi</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{url_for('index')}}" class="active">Beranda</a></li>
+            <li><a href="{{url_for('contact')}}">Kontak</a></li>
+            <li><a href="{{url_for('klasifikasi')}}">Mulai Klasifikasi</a></li>
+        </ul>
+    </nav>
+
+    <section id="section-features" class="hero">
+        <div class="hero-content">
+            <h2>Tentang Kami</h2>
+            <p>E-Haiwan adalah website edukasi tentang hewan yang bermanfaat bagi siswa Sekolah Dasar jenjang Kelas 3 untuk lebih mengenal mengenai hewan sesuai dengan materi mata pelajaran Ilmu Pengetahuan Alam yang diajarkan di sekolah</p>
+            <p>Cobalah pengalaman belajar yang berbeda dan menyenangkan bersama E-Haiwan</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Sudut Pengetahuan</h2>
+        <div class="feature">
+            <h3>Ovipar</h3>
+            <p>Ovipar adalah cara perkembangbiakan hewan secara bertelur</p> 
+            <p>Contoh hewan Ovipar : Kupu-kupu, Kadal, Kumbang</p>
+
+            <h3>Vivipar</h3>
+            <p>Vivipar adalah cara perkembangbiakan hewan secara melahirkan</p>
+            <p>Contoh hewan Vivipar : Gajah, Sapi, Harimau, Panda, Tikus, Anjing, Kucing, Monyet, Kuda nil,Gorila, Zebra</p>
+
+            <h3>Ovovivipar</h3>
+            <p>Ovovivipar adalah cara perkembangbiakan hewan secara bertelur dan melahirkan</p>
+            <p>Contoh hewan Ovovivipar : Laba-laba</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hak Cipta &copy; 2023 E-Haiwan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Classification Website</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/klasifikasi.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>E-HAIWAN</h1>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <h2>Upload Image</h2>
+      <form action="/prediction" method="POST" enctype="multipart/form-data">
+        <h4 class="text-center">Click dibawah ini untuk upload <strong>gambar</strong>.</h4>
+
+        <div class="form-group text-center">
+            <label>
+                <input type="file" name="file" id="file" style="display:none" accept="image/*" required>
+                <img src={{ url_for('static', filename="Gambar/upload.png") }} width="20%">
+            </label>
+        </div>
+
+        <div class="form-group form-check mt-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Pastikan Anda mengunggah gambar yang terkait dengan 
+            <strong>'Beetle', 'Butterfly', 'Cat', 'Cow', 'Dog', 'Elephant', 'Gorilla', 'Hippo', 'Lizard', 'Monkey', 'Mouse', 'Panda', 'Spider', 'Tiger', 'Zebra'</strong></label>
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+          <input type="submit" class="btn btn-secondary" name="Submit dan Prediksi" value="Submit and Predict">
+        </div>
+    </form>
+    </section>
+    {% if img_uploaded %}
+    <section id="result-section">
+      <div id="result" class="text-center">
+        <img class="center" src="data:image/png;base64, {{img_uploaded}}" alt='Your uploaded image' style="width:100%; height:60%;" >
+        <h3 class="mt-3">Result: {{ probability }}% {{ class_pred }}</h3>
+      </div>
+    </section>
+    {% endif %}
+  </main>
+</body>
+</html>
