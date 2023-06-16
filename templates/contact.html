@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+
+<section id="kontak">
+  <div class="container">
+    <h2>Kontak Kami</h2>
+    <p>Jika Anda memiliki pertanyaan, saran, kritik atau ingin berhubungan dengan Kami, silakan mengisi formulir di bawah ini.</p>
+    <form id="kontak-form">
+      <div class="form-group">
+        <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+      </div>
+      <div class="form-group">
+        <textarea id="pesan" name="pesan" placeholder="Pesan Anda" required></textarea>
+      </div>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Hak Cipta &copy; 2023 E-Haiwan.</p>
+  </div>
+</footer>
+
+</body>
+</html>
